@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 import React from 'react';
 import AdminPanel from './components/AdminPanel';
 import Libros from './components/Libros';
+import Juegos from './components/Juegos';
+
 function App() {
   const [session, setSession] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -46,6 +48,7 @@ function App() {
         <Route path='/libros'
           element={session ? <Libros /> : <Navigate to="/" />}
         />
+        <Route path="/juegos" element={session ? <Juegos /> : <Navigate to="/" />} />
         <Route
           path="/admin"
           element={session ? <AdminPanel /> : <Navigate to="/" />}

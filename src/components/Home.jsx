@@ -17,7 +17,7 @@ export default function Home() {
           Leer 📖
         </Link>
         <Link
-          to="/jugar"
+          to="/juegos"
           className="bg-yellow-500 hover:bg-yellow-600 text-white text-2xl font-bold py-4 px-8 rounded-full shadow-lg transition-colors"
         >
           Jugar 🎮
