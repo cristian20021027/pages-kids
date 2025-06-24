@@ -6,7 +6,7 @@ import { supabase } from './lib/supabaseClient';
 import { useEffect, useState } from 'react';
 import React from 'react';
 import AdminPanel from './components/AdminPanel';
-
+import Libros from './components/Libros';
 function App() {
   const [session, setSession] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -42,6 +42,9 @@ function App() {
         <Route 
           path="/home" 
           element={session ? <Home /> : <Navigate to="/" />} 
+        />
+        <Route path='/libros'
+          element={session ? <Libros /> : <Navigate to="/" />}
         />
         <Route
           path="/admin"

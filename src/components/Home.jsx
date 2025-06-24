@@ -11,7 +11,7 @@ export default function Home() {
       {/* Botones principales */}
       <div className="flex flex-col items-center gap-4 mb-12">
         <Link
-          to="/leer"
+          to="/libros"
           className="bg-green-500 hover:bg-green-600 text-white text-2xl font-bold py-4 px-8 rounded-full shadow-lg transition-colors"
         >
           Leer 📖
